@@ -1,7 +1,7 @@
 body{
 
     text-align: center;
-    color: darkturquoise;
+    color: burlywood;
     background-color: cornsilk;
     width: 80%;
     margin-left: auto;
@@ -10,7 +10,7 @@ body{
 }
 
 .button {
-    background-color: #04AA6D; /* Green */
+    background-color: bisque; 
     border: none;
     color: white;
     padding: 15px 32px;
