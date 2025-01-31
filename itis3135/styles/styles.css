@@ -27,5 +27,12 @@
   }
 
   .screenshot-display{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .screenshot-display img {
+    width: 300px;
+    margin-bottom: 10px;
   }
