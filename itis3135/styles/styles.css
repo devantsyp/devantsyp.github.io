@@ -1,10 +1,11 @@
 .body{
     background-color: #39c4b6;
+    text-align: center;
 }
 
 .main-menu{
 
-    text-align: center;
+    
     color: #fee801;
     background-color: #54c1e6;
     width: 60%;
@@ -15,7 +16,7 @@
 
 .button {
     background-color: #9a9f17; 
-    border: 2px solid;
+    border: 1px solid;
     border-color: #00060e;
     color: white;
     padding: 15px 32px;
