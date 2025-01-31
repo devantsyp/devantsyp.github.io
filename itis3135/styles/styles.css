@@ -28,13 +28,13 @@ body{
     margin: auto;
 }
 
-  .screenshot-display{
+.screenshot-display{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-  .screenshot-display img {
+.screenshot-display img {
     width: 300px;
     margin-bottom: 10px;
 }
