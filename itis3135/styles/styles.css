@@ -1,17 +1,24 @@
 body{
-
+    background-color: #1E1E2E ;
     text-align: center;
-    color: goldenrod;
-    background-color: cornsilk;
-    width: 80%;
+    font-family: 'Play', Impact;
+    color: #D4A373;
+}
+
+.main-menu{
+
+    padding: 20px;
+    color: #fee801;
+    background-color: #54c1e6;
     margin-left: auto;
     margin-right: auto;
     
 }
 
 .button {
-    background-color: rgb(255, 223, 196); 
-    border: none;
+    background-color: #9a9f17; 
+    border: 1px solid;
+    border-color: #00060e;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -19,4 +26,53 @@ body{
     display: inline-block;
     font-size: 16px;
     margin: auto;
-  }
+}
+
+.screenshot-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screenshot-display img {
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+nav a{
+    padding: 10px;
+}
+
+
+img{
+    width: 30%;; 
+}
+
+figure{
+    text-align: center;
+    font-style: italic;
+
+}
+
+h2 p{
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+a{
+    color:aliceblue;
+}
+
+a:hover{
+    color: #BC6C25;
+    
+}
+
+ul{
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 8em;
+
+}
