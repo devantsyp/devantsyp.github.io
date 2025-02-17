@@ -55,17 +55,18 @@ figure{
 
 }
 
-h2 p{
-    max-width: 60%;
-    margin: auto;
-    padding: 20px;
-}
 
 a{
     color:aliceblue;
 }
 
-a:hover{
+h2 a{
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+a:hover:not(.main-text){
     color: #BC6C25;
     
 }
