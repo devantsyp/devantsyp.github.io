@@ -40,13 +40,17 @@ body{
     margin-top: 1px;
 }
 
-nav a{
+nav {
     padding: 10px;
 }
 
 
+
 img{
-    width: 30%;; 
+    width: 30%;
+    max-width: 400px;
+    max-height: 400px;
+    
 }
 
 figure{
@@ -55,17 +59,18 @@ figure{
 
 }
 
-h2 p{
-    max-width: 60%;
-    margin: auto;
-    padding: 20px;
-}
 
 a{
     color:aliceblue;
 }
 
-a:hover{
+h2 a{
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+a:hover:not(.main-text){
     color: #BC6C25;
     
 }
