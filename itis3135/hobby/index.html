@@ -48,6 +48,11 @@
             cursor: pointer;
         }
 
+        .navbar-divider {
+            width: 32px;
+            
+        }
+
         a:hover{
             color: #00ffff;
         }
@@ -188,7 +193,7 @@
             }
         }
 
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 1050px){
             nav {
                 flex-direction: column; 
                 
@@ -201,10 +206,15 @@
         <h1>Breakdancing Lifestyle</h1>
         <nav>
             <a onclick="showSection('home')">Home</a>
+            <img src="images/favicon.png" alt="divider" class="navbar-divider" />
             <a onclick="showSection('about')">About Me</a>
+            <img src="images/favicon.png" alt="divider" class="navbar-divider" />
             <a onclick="showSection('schedule')">Schedule</a>
+            <img src="images/favicon.png" alt="divider" class="navbar-divider" />
             <a onclick="showSection('location')">UNCC Breaking</a>
+            <img src="images/favicon.png" alt="divider" class="navbar-divider" />
             <a onclick="showSection('how')">How to Start</a>
+            <img src="images/favicon.png" alt="divider" class="navbar-divider" />
             <a onclick="showSection('prompts')">AI Prompts & References</a>
         </nav>
     </header>
@@ -359,12 +369,11 @@
             <p>Breakdancer showcasing a power move: <a href="https://unsplash.com/photos/man-in-black-jacket-and-blue-denim-jeans-standing-near-brown-brick-building-during-daytime-58d3nYNjRuw" target="_blank">
             Source</a> from <a href="https://unsplash.com/@gzaracas" target="_blank">Guillaume Zaracas</a>.
             </p>
+            <p>Favicon: <a href="https://icons8.com/icons/set/favicon" target="_blank">Source</a>.</p>
         </section>
     </main>
     
-    <footer>
-        <p>&copy; 2025 Breakdancing Hobby</p>
-    </footer>
+
     
     <script>
         function showSection(sectionId) {
