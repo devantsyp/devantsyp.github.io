@@ -19,27 +19,32 @@
             padding: 0;
             
         }
-        
+
+        a {
+            cursor: pointer;
+        }
+
         header {
             font-family: 'Bungee', sans-serif;
             background: linear-gradient(135deg, #0077ff, #005fcc, #7a00ff, #4700b3);
-
-
             padding: 15px;
             text-align: center;
             border-radius: 0px 0px 15px 15px;
         }
         nav {
+            font-size: 10px;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 20px;
             background: #333;
             padding: 10px;
         }
         nav a {
+            
             color: #fff;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 15px;
             cursor: pointer;
         }
 
@@ -79,9 +84,115 @@
             text-decoration: none;
         }
 
+        #prompts a, #location a {
+            color: #CC5500;
+            text-decoration: none;
+            
+
+        }
+
+        #location em, #how em{
+            color: rgba(255, 215, 0, 0.9);
+            font-style: normal;
+            font-weight: bold;
+        }
+
         .image-array{
             display: flex;
             align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: rgba(50, 50, 80, 0.8);;
+            color: #FFD700;
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .schedule-table th, .schedule-table td {
+            border: 2px solid rgba(255, 215, 0, 0.9);
+            padding: 12px;
+        }
+
+        .schedule-table th {
+            background-color: rgba(255, 215, 0, 0.9);
+            font-weight: bold;
+            color: #000;
+        }
+
+        .schedule-table tr:hover {
+            background-color: rgba(255, 200, 50, 0.9); 
+            color: #000; 
+            transition: 0.3s ease-in-out;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .radio-group label {
+            font-size: 16px;
+            color: #e6e6e6;
+        }
+
+        button {
+            background-color: rgba(255, 215, 0, 0.9);
+            color: black;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Bungee', sans-serif;
+
+        }
+
+        button:hover {
+            background-color: #005fcc;
+        }
+
+      
+
+        @media screen and (max-width: 1100px){
+            .image-array{
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 900px){
+            nav {
+                flex-direction: column; 
+                
+            }
         }
     </style>
 </head>
@@ -92,7 +203,7 @@
             <a onclick="showSection('home')">Home</a>
             <a onclick="showSection('about')">About Me</a>
             <a onclick="showSection('schedule')">Schedule</a>
-            <a onclick="showSection('locations')">Best Locations</a>
+            <a onclick="showSection('location')">UNCC Breaking</a>
             <a onclick="showSection('how')">How to Start</a>
             <a onclick="showSection('prompts')">AI Prompts & References</a>
         </nav>
@@ -115,50 +226,138 @@
         
         <section id="about">
             <h2>About Me</h2>
-            <p>I've been passionate about breakdancing since I was about 11. Before I moved to the United States, I used to practice for about a year or so and even went to several competitions.
+            <p>Hello, my name is Vlad. I've been passionate about breakdancing since I was about 11. Before I moved to the United States, I used to practice for about a year or so and even went to several competitions.
                 Now, I'm getting back into this art form with the people that I found at the UNC Charlotte campus.
             </p>
+
+            <p>Breakdancing is composed of a few elements: toprock, drops, downrock, power moves, and freezes. Here are some of the freezes you could learn:</p>
             <div class="image-array">
                 <figure>
-                    <img src="images/uncc_breaking.jpg" alt="UNCC Breaking logo" width="400">
-                    <figcaption><a href="https://www.instagram.com/uncc.breaking/" target="_blank">@uncc.breaking on instagram</a></figcaption>
+                    <img src="images/baby_freeze_resized.jpg" alt="Baby freeze" width="200">
+                    <figcaption>Baby Freeze</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/uncc_breaking.jpg" alt="UNCC Breaking logo" width="400">
-                    <figcaption><a href="https://www.instagram.com/uncc.breaking/" target="_blank">@uncc.breaking on instagram</a></figcaption>
+                    <img src="images/one_hand_resized.jpg" alt="One handed freeze" width="200">
+                    <figcaption>One Handed Freeze</figcaption>
                 </figure>
             </div>
         </section>
         
         <section id="schedule">
             <h2>Best Times</h2>
-            <p>Breakdancing practice sessions vary based on your schedule...</p>
+            <p>Breakdancing practice sessions vary based on your schedule, but consistency is key.  
+               Whether you're a beginner or an advanced dancer, setting dedicated times for practice will help you improve quickly.</p>
+        
+            <p>Here’s a practice schedule you could follow:</p>
+        
+            <table class="schedule-table">
+                <tr>
+                    <th>Day</th>
+                    <th>Focus</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Toprock & Footwork Drills</td>
+                    <td>6:00 PM - 7:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Power Moves & Strength Training</td>
+                    <td>6:00 PM - 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Freestyle & Battle Practice</td>
+                    <td>7:00 PM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Stretching & Recovery</td>
+                    <td>3:00 PM - 4:00 PM</td>
+                </tr>
+            </table>
+        
+            <figure>
+                <img src="images/breakdancer_stretching.jpg" alt="Breakdancer stretching before practice" width="400">
+                <figcaption>Stretching before practice is essential for preventing injuries.</figcaption>
+            </figure>
         </section>
         
-        <section id="locations">
+        
+        <section id="location">
             <h2>Best Locations</h2>
-            <p>Finding the right place to practice is crucial...</p>
+            <p>Finding the right place to practice is crucial... Good thing there are like-minded people near you! If you attend UNC Charlotte and are interested in trying out breakdancing,
+                join the <em>UNCC Breaking Club</em>! We meet every Monday at <em>MATS02 @ 2:30pm</em>. See you there!
+            </p>
+            <figure>
+                <a href="https://www.instagram.com/uncc.breaking/" target="_blank"><img src="images/uncc_breaking.jpg" alt="UNCC Breaking Club" width="200"></a>
+                <figcaption><a href="https://www.instagram.com/uncc.breaking/" target="_blank">@uncc.breaking</a> on Instagram</figcaption>
+            </figure>
+            <form>
+                
+                <div class="radio-group">
+                <p>Please let us know if you plan on attending the breakdancing practice sessions:</p>    
+                    <label>
+                        <input type="radio" name="attendance" value="yes"> Yes, I will attend.
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="attendance" value="no"> No, I will not attend.
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="attendance" value="maybe"> Maybe, I'm unsure.
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            
         </section>
+        
         
         <section id="how">
             <h2>How to Start</h2>
-            <p>To start breakdancing, you'll need determination...</p>
+            <p>To start breakdancing, you'll need determination. Here are some tips to get you started:</p>
+            <ul>
+                <li><em>Start with the basics. </em>Begin by learning to "toprock," which is the standing portion of breakdancing. Then, focus on getting smooth and precise footwork down, mastering basic moves like 6-step.</li>
+                <li><em>Develop core strength and flexibility. </em>Breakdancing requires strong muscles, especially core, arms, and legs, as well as great flexibility. Begin a workout routine that incorporates olympic-style lifts that focus on explosive power, train your endurance, and improve flexibility.</li>
+                <li><em>Work on your timing and rhythm. </em>Breakdancing is all about rythm. Practice dancing to music to get used to the beats by matching your moves to the music's rythm.</li>
+                <li><em>Maintain consistency. </em>Consistent practice is the only way to improve. Practice on a weekly basis, seek help from others, and don't be afraid to fail.</li>
+            </ul>
+
+            <h3>Here is a great video going over the basics:</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/watch?v=6sjwea0wkWg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <p>Have fun! Breakdancing is a form of self-expression and creativity, so enjoy the process. Remember, the more you enjoy it, the more you’ll be motivated to practice and improve.</p>
         </section>
         
         <section id="prompts">
             <h2>AI Prompts & References</h2>
             <h3>AI Prompts Used During the Creation of This Page:</h3>
-            <p>I used this picture for the background: https://static.vecteezy.com/system/resources/previews/017/396/934/non_2x/colorful-graffiti-wall-art-background-street-art-hip-hop-urban-illustration-background-seamless-amazing-graffiti-art-background-vector.jpg
+            <p>I used this picture for the background: https://static.vecteezy.com/system/resources/<br>previews/017/396/934/non_2x/colorful-graffiti-wall-art-background-street-art-hip-hop-urban-illustration-background-seamless-amazing-graffiti-art-background-vector.jpg">
+
+            
                 <br>create a color scheme for the website that I could use.</p>
             <p>Using CSS or JS, how would I implement multi-page functionality using the navbar?</p>
+            <p>Create a table for the schedule page. Make sure you style it only using CSS rules.</p>
+            <p>Generate a realistic image of a breakdancer stretching.</p>
+            <p>How do you embed a video into an html page?</p>
+            <p>Create a simple questionnaire of radio type about whether or not the person will be attending practices. Style it in accordance to the page format.</p>
 
 
 
             <h3>Image Sources:</h3>
-            <p>Background image source: https://static.vecteezy.com/system/resources/previews/017/396/934/non_2x/colorful-graffiti-wall-art-background-street-art-hip-hop-urban-illustration-background-seamless-amazing-graffiti-art-background-vector.jpg<br>
-            Credits: <a href="https://www.vecteezy.com" target="_blank">Vecteezy</a></p>
+            <p>Background image: <a href="https://static.vecteezy.com/system/resources/previews/017/396/934/non_2x/colorful-graffiti-wall-art-background-street-art-hip-hop-urban-illustration-background-seamless-amazing-graffiti-art-background-vector.jpg" target="_blank">Source</a>
+            from <a href="https://www.vecteezy.com" target="_blank">Vecteezy</a>.</p>
             <p>Breakdancer showcasing a power move: <a href="https://unsplash.com/photos/man-in-black-jacket-and-blue-denim-jeans-standing-near-brown-brick-building-during-daytime-58d3nYNjRuw" target="_blank">
-            Guillaume Zaracas</a>
+            Source</a> from <a href="https://unsplash.com/@gzaracas" target="_blank">Guillaume Zaracas</a>.
             </p>
         </section>
     </main>
