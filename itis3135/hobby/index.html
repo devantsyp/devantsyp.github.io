@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakdancing Hobby</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            
+            background-color: #1e1e2f;
+            color: #e6e6e6;
+            max-width: 80%;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/017/396/934/non_2x/colorful-graffiti-wall-art-background-street-art-hip-hop-urban-illustration-background-seamless-amazing-graffiti-art-background-vector.jpg);
+            margin: 0 auto;
+            padding: 0;
+            
+        }
+        
+        header {
+            font-family: 'Bungee', sans-serif;
+            background: linear-gradient(135deg, #0077ff, #005fcc, #7a00ff, #4700b3);
+
+
+            padding: 15px;
+            text-align: center;
+            border-radius: 0px 0px 15px 15px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        a:hover{
+            color: #00ffff;
+        }
+        main {
+            font-family: 'Russo One', sans-serif;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #292942;
+            border-radius: 10px;
+        }
+        section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        figure {
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+        }
+
+        #prompts p {
+            color: #2D2D2D;
+            background-color: #cfcfcf;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        #about a {
+            color: #e6e6e6;
+            text-decoration: none;
+        }
+
+        .image-array{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Breakdancing Lifestyle</h1>
+        <nav>
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('about')">About Me</a>
+            <a onclick="showSection('schedule')">Schedule</a>
+            <a onclick="showSection('locations')">Best Locations</a>
+            <a onclick="showSection('how')">How to Start</a>
+            <a onclick="showSection('prompts')">AI Prompts & References</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="active">
+            <h2>Home</h2>
+            <p>Breakdancing, also known as b-boying, is a style of street dance combining elements from acrobatics, urban dancing, and even martial arts.
+                From its inception in the early 1980s in the Bronx in African-American and Puerto Rican communities, breakdancing has undergone remarkable changes. 
+                </p>
+                <p>What started as a raw and expressive street dance quickly evolved into a global phenomenon -
+                breakdancing has moved from underground battles to international competitions, with events like the Red Bull BC One and the upcoming inclusion in the 2024 Paris Olympics solidifying its place as a respected sport and art form.
+            </p>
+            <figure>
+                <img src="images/breakdance1.jpg" alt="breakdancer showcasing a power move" width="400">
+                <figcaption>A breakdancer showcasing a power move.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I've been passionate about breakdancing since I was about 11. Before I moved to the United States, I used to practice for about a year or so and even went to several competitions.
+                Now, I'm getting back into this art form with the people that I found at the UNC Charlotte campus.
+            </p>
+            <div class="image-array">
+                <figure>
+                    <img src="images/uncc_breaking.jpg" alt="UNCC Breaking logo" width="400">
+                    <figcaption><a href="https://www.instagram.com/uncc.breaking/" target="_blank">@uncc.breaking on instagram</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/uncc_breaking.jpg" alt="UNCC Breaking logo" width="400">
+                    <figcaption><a href="https://www.instagram.com/uncc.breaking/" target="_blank">@uncc.breaking on instagram</a></figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section id="schedule">
+            <h2>Best Times</h2>
+            <p>Breakdancing practice sessions vary based on your schedule...</p>
+        </section>
+        
+        <section id="locations">
+            <h2>Best Locations</h2>
+            <p>Finding the right place to practice is crucial...</p>
+        </section>
+        
+        <section id="how">
+            <h2>How to Start</h2>
+            <p>To start breakdancing, you'll need determination...</p>
+        </section>
+        
+        <section id="prompts">
+            <h2>AI Prompts & References</h2>
+            <h3>AI Prompts Used During the Creation of This Page:</h3>
+            <p>I used this picture for the background: https://static.vecteezy.com/system/resources/previews/017/396/934/non_2x/colorful-graffiti-wall-art-background-street-art-hip-hop-urban-illustration-background-seamless-amazing-graffiti-art-background-vector.jpg
+                <br>create a color scheme for the website that I could use.</p>
+            <p>Using CSS or JS, how would I implement multi-page functionality using the navbar?</p>
+
+
+
+            <h3>Image Sources:</h3>
+            <p>Background image source: https://static.vecteezy.com/system/resources/previews/017/396/934/non_2x/colorful-graffiti-wall-art-background-street-art-hip-hop-urban-illustration-background-seamless-amazing-graffiti-art-background-vector.jpg<br>
+            Credits: <a href="https://www.vecteezy.com" target="_blank">Vecteezy</a></p>
+            <p>Breakdancer showcasing a power move: <a href="https://unsplash.com/photos/man-in-black-jacket-and-blue-denim-jeans-standing-near-brown-brick-building-during-daytime-58d3nYNjRuw" target="_blank">
+            Guillaume Zaracas</a>
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Breakdancing Hobby</p>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach((sec) => sec.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
