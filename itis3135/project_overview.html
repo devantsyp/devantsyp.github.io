@@ -7,11 +7,40 @@
 </head>
 <body>
     <h1>WORK IN PROGRESS</h1>
-    <div>
-        <figure>
-            <img src="https://drive.google.com/file/d/1h_eNZPAZD5wJlEUqIkbqqyWjm-eXKh1U/view?usp=sharing" alt="wireframe representation of the project">
-            <figcaption>Wireframe representation of the website</figcaption>
-        </figure>
+    <div class="grid-container">
+        <div>
+            <figure>
+                <img src="./images/wireframe.jpg" width=400px alt="wireframe representation of the project">
+                <figcaption>Wireframe representation of the website</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <figure>
+                <img src="./images/wireframe.jpg" width=400px alt="wireframe representation of the project">
+                <figcaption>Wireframe representation of the website</figcaption>
+            </figure>
+        </div>
     </div>
 </body>
 </html>
+
+
+<style>
+    body{
+        text-align: center;
+        margin: auto;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        padding: 10px;
+    }
+
+    @media (max-width: 1000px){
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>
