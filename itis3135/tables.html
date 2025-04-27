@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables - Whimsical Company</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>HTML Tables - Whimsical Company</h2>
+        
+        <h3>My Tabular Data</h3>
+        <div class="aligned-container">
+            <ol class="aligned-list">
+                <li>
+                    Justin Stuart jstuart@gmail.com 2
+                </li>
+
+                <li>
+                    Beth Booth bbooth@yahoo.com 25
+                </li>
+
+                <li>
+                    Nancy Weber nanceweber1@gmail.com 22
+                </li>
+
+                <li>
+                    Evan Davidson edavids@uncc.edu 2
+                </li>
+
+                <li>
+                    Taylor Hall taylorhall@gmail.com 7
+                </li>
+
+                <li>
+                    Sam Easton eastonsam@hotmail.com 11
+                </li>
+                
+                <li>
+                    Kirby Patton kpatton11@charlotte.edu 4
+                </li>
+
+                <li>
+                    Pete Hegseth phegseth@mail.ru 1
+                </li>
+            </ol>
+        </div>
+
+        <br><br>
+
+        <h3>Employee Data in Simple Table</h3>
+        <div class="aligned-container">
+            <table class="simple-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Justin Stuart</td>
+                    <td>jstuart@gmail.com</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>Beth Booth</td>
+                    <td>bbooth@yahoo.com</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>Nancy Weber</td>
+                    <td>nanceweber1@gmail.com</td>
+                    <td>22</td>
+                </tr>
+
+                <tr>
+                    <td>Evan Davidson</td>
+                    <td>edavids@uncc.edu</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>Taylor Hall</td>
+                    <td>taylorhall@gmail.com</td>
+                    <td>7</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Sam Easton</td>
+                    <td>eastonsam@hotmail.com</td>
+                    <td>11</td>
+                </tr>
+
+                <tr>
+                    <td>Kirby Patton</td>
+                    <td>kpatton11@charlotte.edu</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>Pete Hegseth</td>
+                    <td>phegseth@mail.ru</td>
+                    <td>1</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <br><br>
+
+        <h3>Employee Data in Complex Table</h3>
+        
+        <div class="aligned-container">
+            <figure aria-labelledby="table-caption" class="complex-table">
+                <figcaption id="table-caption">Employee Information</figcaption>
+                <table class="simple-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Years of Service</th>
+                            <th class="salary-cell">Monthly Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td rowspan="3" class="spanner">Marketing</td>
+                            <td>Justin Stuart</td>
+                            <td>jstuart@gmail.com</td>
+                            <td>2</td>
+                            <td class="salary-cell">$4000</td>
+                        </tr>
+                        <tr>
+                            <td>Beth Booth</td>
+                            <td>bbooth@yahoo.com</td>
+                            <td>25</td>
+                            <td class="salary-cell">$5500</td>
+                        </tr>
+                        <tr>
+                            <td>Taylor Hall</td>
+                            <td>taylorhall@gmail.com</td>
+                            <td>7</td>
+                            <td class="salary-cell">$4800</td>
+                        </tr>
+            
+                        
+                        <tr>
+                            <td rowspan="2" class="spanner">Sales</td>
+                            <td>Nancy Weber</td>
+                            <td>nanceweber1@gmail.com</td>
+                            <td>22</td>
+                            <td class="salary-cell">$5300</td>
+                        </tr>
+                        <tr>
+                            <td>Sam Easton</td>
+                            <td>eastonsam@hotmail.com</td>
+                            <td>11</td>
+                            <td class="salary-cell">$4900</td>
+                        </tr>
+            
+                        
+                        <tr>
+                            <td rowspan="2" class="spanner">IT</td>
+                            <td>Kirby Patton</td>
+                            <td>kpatton11@charlotte.edu</td>
+                            <td>4</td>
+                            <td class="salary-cell">$6000</td>
+                        </tr>
+                        <tr>
+                            <td>Pete Hegseth</td>
+                            <td>phegseth@mail.ru</td>
+                            <td>1</td>
+                            <td class="salary-cell">$4200</td>
+                        </tr>
+            
+                        
+                        <tr class="total-row">
+                            <th colspan="3">Total Years of Service</th>
+                            <td>72</td>
+                            <td class="salary-cell">$37,700</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+        </div>
+
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+
+</html>

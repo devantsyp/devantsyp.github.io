@@ -88,6 +88,93 @@ ul{
 
 }
 
+.aligned-list {
+
+    list-style-position: outside; 
+
+
+}
+
+.aligned-list li {
+    margin-bottom: 5px;
+    
+    text-align: left;
+}
+
+.aligned-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.simple-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.simple-table td, .simple-table th{
+    padding: 5px;
+    border: 2px solid #D4A373;
+}
+
+
+.complex-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.complex-table th, .complex-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.complex-table th {
+    background-color: darkgray;
+    color: white;
+}
+
+.complex-table tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.complex-table tbody tr:nth-child(even) {
+    background-color: silver;
+}
+
+
+.complex-table .salary-cell {
+    text-align: right;
+}
+
+.complex-table figcaption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.complex-table figure {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.spanner{
+    background-color: darkgray;
+    color: white
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 @media (max-width: 600px) {
     body {
@@ -97,13 +184,13 @@ ul{
 
 @media (min-width: 601px) and (max-width: 1024px) {
     body {
-      background-color: #1E1E2E;
+      background-color: rgb(0, 0, 88);
     }
 }
 
 @media (min-width: 1025px) {
     body {
-      background-color: darkblue;
+      background-color: #1E1E2E;
     }
 }
   
