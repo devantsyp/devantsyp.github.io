@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - UNCC Breaking</title>
+    <link rel="stylesheet" href="styles/styles.css">
+     <!--FONT-->
+     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+     <!--Validator-->
+     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main id="main" class="active">
+        <h2>UNCC Breaking Project Overview</h2>
+
+        <div class="overview-container">
+
+            <p><em>Project Name</em>: UNC Charlotte Breakdancing Club Web Hub</p>
+            <p><em>Intended Purpose:</em> This web application aims to promote the UNC Charlotte breakdancing club, 
+                showcase its members and events, and provide useful resources for current UNCC students who are interested 
+                in joining or learning about breakdancing. The platform will help improve communication, increase visibility 
+                on campus, and serve as an interactive information hub.
+            </p>
+
+            <p><em>Client Information:</em> The client for this project is Mitch, a student, who is organizing a breakdancing club at the UNCC campus. 
+                A valid email address is unccbreaking@gmail.com.</p>
+
+            <figure>
+                <figcaption><em>Wireframe representation</em></figcaption>
+                <img src="/images/wireframe.png" width="500" alt="wireframe representation of the site structure">
+            </figure>
+
+            <p><em>Site map</em></p>
+            <ol>
+                <li>
+                    <em>Home Page</em>
+                    <ul>
+                        <li><em>Purpose:</em> Introduce the UNCC Breaking club and invite users to explore and join.</li>
+                        <li><em>Audience:</em> General public, potential members..</li>
+                        <li><em>Content:</em> Banner with logo, mission statement, welcome message, navigation links. Footer includes HTML/CSS validation links.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <em>About Page</em>
+                    <ul>
+                        <li><em>Purpose:</em> Share the club’s history and mission.</li>
+                        <li><em>Audience:</em> General public, new/prospective members.</li>
+                        <li><em>Content:</em> Brief overview of the club, member profiles/bios, accordion expands/collapses. Embedded Google Maps location.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <em>Events Page</em>
+                    <ul>
+                        <li><em>Purpose:</em> Promote practices, performances, future meetups, local events.</li>
+                        <li><em>Audience:</em> Members, interested students.</li>
+                        <li><em>Content:</em> Basic calendar or list format which includes practice times. 
+                            Special sessions and workshops. Will have an interest form (e.g., “Let me know about future events!”). 
+                            Includes a submit button.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <em>Gallery Page</em>
+                    <ul>
+                        <li><em>Purpose:</em> Display media from practices or battles.</li>
+                        <li><em>Audience:</em> Anyone interested and browsing the site.</li>
+                        <li><em>Content:</em> Selection of photos and/or clips.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <em>Learn Page</em>
+                    <ul>
+                        <li><em>Purpose:</em> Provide basic info about breakdancing, beginner tips, and how to get started.</li>
+                        <li><em>Audience:</em> Students interested in trying it out.</li>
+                        <li><em>Content:</em> How to get started” section. Basic terminology or style overview. 
+                            Embedded video or link to Youtube resources. Collapsible FAQ or guide steps using jQuery/JS.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <em>Contact Page</em>
+                    <ul>
+                        <li><em>Purpose:</em> Lets users get in touch with the club.</li>
+                        <li><em>Audience:</em> Interested students, collaborators.</li>
+                        <li><em>Content:</em> Contact form, social media links, club email. Includes form fields, submit button</li>
+                    </ul>
+                </li>
+
+
+            </ol>
+
+            <figure>
+                <img src="/images/site_map.png" width="900" alt="site map representation">
+            </figure>
+            
+
+            <p><em>Dynamic functionality</em></p>
+            <ul>
+                <li>
+                    Gallery page includes a gallery which allows the user to cycle through the images
+                    using navigation arrows. Inspired by <a href="https://www.nationalgeographic.com/photo-of-the-day/media-spotlight/halloween-pumpkin-street-england">National Geographic</a>.
+                </li>
+                
+                <li>
+                    Learning Page has buttons to toggle between tutorials (e.g., "Basic Moves," "Power Moves," "Footwork") without reloading the page. Inspired by <a href="https://www.apple.com/ipad/compare/">Apple</a>.
+                </li>
+
+                <li>
+
+                    The header has a button which enables the navbar dropdown menu and which is also animated.
+
+                </li>
+
+                <li>
+
+                    Instagram posts embedded into the site across various pages.
+
+                </li>
+
+                <li>
+
+                    Media queries for support across various resolutions. 
+                    
+                </li>
+            </ul>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+
+
+</body>
+</html>

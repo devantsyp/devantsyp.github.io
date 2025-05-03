@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - UNCC Breaking</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main id="main"  class="active">
+        
+        <h2 style="margin: 10px 0px;">UNCC Breaking Gallery</h2>
+
+        
+        <div class="carousel">
+            <button class="prev" onclick="changeImage(-1)">❮</button>
+        
+            <div class="carousel-images">
+            <img src="images/city2.jpg" alt="Gallery Image 1">
+            <img src="images/city3.jpg" alt="Gallery Image 2">
+            <img src="images/city4.jpg" alt="Gallery Image 3">
+            </div>
+        
+            <button class="next" onclick="changeImage(1)">❯</button>
+        </div>
+        
+        <p><em>More coming soon...</em></p>
+
+        
+        
+
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+
+    
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll(".carousel-images img");
+        const totalImages = images.length;
+    
+      
+        function updateCarousel() {
+          const offset = -currentIndex * 100;  
+          document.querySelector(".carousel-images").style.transform = `translateX(${offset}%)`;
+        }
+
+        function changeImage(direction) {
+          currentIndex = (currentIndex + direction + totalImages) % totalImages;
+          updateCarousel();
+        }
+
+    </script>
+      
+      
+      
+</body>
+
+    
+  
+
+</html>
