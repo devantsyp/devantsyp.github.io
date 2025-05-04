@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - UNCC Breaking</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!--FONT-->
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
     
 
 </head>
@@ -30,15 +30,19 @@
             <button class="prev" onclick="changeImage(-1)">❮</button>
         
             <div class="carousel-images">
-            <img src="images/city2.jpg" alt="Gallery Image 1">
-            <img src="images/city3.jpg" alt="Gallery Image 2">
-            <img src="images/city4.jpg" alt="Gallery Image 3">
+                <img src="images/one.jpg" alt="Gallery Image 1">
+                <img src="images/two.jpg" alt="Gallery Image 2">
+                <img src="images/three.jpg" alt="Gallery Image 3">
+                <img src="images/four.jpg" alt="Gallery Image 4">
+                <img src="images/five.jpg" alt="Gallery Image 5">
+                <img src="images/six.jpg" alt="Gallery Image 6">
+                <img src="images/seven.jpg" alt="Gallery Image 7">
             </div>
         
             <button class="next" onclick="changeImage(1)">❯</button>
         </div>
         
-        <p><em>More coming soon...</em></p>
+        <p><em style="color: black; font-size: large;">More coming soon...</em></p>
 
         
         
@@ -52,23 +56,7 @@
 
     
     <script src="scripts/HTMLInclude.min.js"></script>
-    <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll(".carousel-images img");
-        const totalImages = images.length;
-    
-      
-        function updateCarousel() {
-          const offset = -currentIndex * 100;  
-          document.querySelector(".carousel-images").style.transform = `translateX(${offset}%)`;
-        }
-
-        function changeImage(direction) {
-          currentIndex = (currentIndex + direction + totalImages) % totalImages;
-          updateCarousel();
-        }
-
-    </script>
+    <script src="scripts/scripts.js"></script>
       
       
       

@@ -8,8 +8,6 @@
      <!--FONT-->
      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
-     <!--Validator-->
-     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -18,23 +16,25 @@
     </header>
 
     <main id="main" class="active">
-        <h2>UNCC Breaking Project Overview</h2>
+        <h1>UNCC Breaking Project Overview</h1>
 
         <div class="overview-container">
 
-            <p><em>Project Name</em>: UNC Charlotte Breakdancing Club Web Hub</p>
-            <p><em>Intended Purpose:</em> This web application aims to promote the UNC Charlotte breakdancing club, 
-                showcase its members and events, and provide useful resources for current UNCC students who are interested 
-                in joining or learning about breakdancing. The platform will help improve communication, increase visibility 
-                on campus, and serve as an interactive information hub.
-            </p>
+            <div id="overview-intro">
+                <p><em>Project Name</em>: UNC Charlotte Breakdancing Club Web Hub</p>
+                <p><em>Intended Purpose:</em> This web application aims to promote the UNC Charlotte breakdancing club, 
+                    showcase its members and events, and provide useful resources for current UNCC students who are interested 
+                    in joining or learning about breakdancing. The platform will help improve communication, increase visibility 
+                    on campus, and serve as an interactive information hub.
+                </p>
 
-            <p><em>Client Information:</em> The client for this project is Mitch, a student, who is organizing a breakdancing club at the UNCC campus. 
-                A valid email address is unccbreaking@gmail.com.</p>
+                <p><em>Client Information:</em> The client for this project is Mitch, a student, who is organizing a breakdancing club at the UNCC campus. 
+                    A valid email address is unccbreaking@gmail.com.</p>
+            </div>
 
             <figure>
                 <figcaption><em>Wireframe representation</em></figcaption>
-                <img src="/images/wireframe.png" width="700" alt="wireframe representation of the site structure">
+                <img src="images/wireframe.png" width="700" alt="wireframe representation of the site structure">
             </figure>
 
             <p><em>Site map</em></p>
@@ -102,7 +102,7 @@
             </ol>
 
             <figure>
-                <img src="/images/site_map.png" width="900" alt="site map representation">
+                <img src="images/site_map.png" width="900" alt="site map representation">
             </figure>
             
 
@@ -115,18 +115,32 @@
                 
                 <li>
                     Learning Page has buttons to toggle between tutorials (e.g., "Basic Moves," "Power Moves," "Footwork") without reloading the page. Inspired by <a href="https://www.apple.com/ipad/compare/">Apple</a>.
+                    It also features several Youtube videos and the FAQs section which features dynamic dropdowns.
                 </li>
 
                 <li>
 
-                    The header has a button which enables the navbar dropdown menu and which is also animated.
+                    The header has a button which enables the navbar dropdown menu and which is also animated. When the navbar is collapsed or expanded, the height of the content below changes accordingly.
 
                 </li>
 
                 <li>
 
-                    Instagram posts embedded into the site across various pages.
+                    WAVE Accessibility Checker uses dynamic url loading depending on which page the button was clicked, i.e. it will
+                    load the page from which it was accessed.
 
+                </li>
+
+                <li>
+
+                    Home page has an embedded Instagram post.
+
+                </li>
+
+                <li>
+
+                    Contact page has a form for the user to fill out.
+                    
                 </li>
 
                 <li>
@@ -134,6 +148,14 @@
                     Media queries for support across various resolutions. 
                     
                 </li>
+
+                <li>
+
+                    There are no validation errors from any of the tools.
+                    
+                </li>
+
+                
             </ul>
         </div>
         
@@ -144,6 +166,7 @@
     </footer>
 
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/scripts.js"></script>
 
 
 </body>
